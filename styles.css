@@ -216,14 +216,18 @@ h2 {
   font-size: 14px;
   font-weight: 900;
   cursor: pointer;
-  transition: transform 1s ease;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
   text-align: center;
   width: 80%;
+  border-radius: 10px;
 }
 
 .join:hover {
   transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(38, 160, 54);
 }
+
 
 .feature-speakers {
   background-color: rgba(255, 255, 255, 1);
@@ -559,13 +563,29 @@ p {
 }
 
 button {
-  border: solid green 4px;
-  width: 40%;
-  padding: 2%;
-  border-radius: 0.7em;
+  background-color: rgb(44, 179, 62);
+  color: white;
+  padding: 12px 24px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  font-family: cursive;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+
+button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgb(38, 160, 54);
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
 
 @media screen and (min-width: 768px) {
   .menu-mobile {
