@@ -545,7 +545,7 @@ input {
   height: 7vh;
   border-radius: 0.5em;
   padding-left: 2%;
-  font-family: cursive;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 textarea {
@@ -555,7 +555,7 @@ textarea {
     text-align: left;
     padding: 1%;
     border-radius: 0.5em;
-    font-family: cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 p {

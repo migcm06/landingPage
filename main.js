@@ -20,7 +20,7 @@ navLinks.forEach((link) => {
 const speakers = [
   {
     photo: './images/speaker1.png',
-    name: 'Yochai Benkler',
+    name: 'Estalin Romero',
     ocupation: 'Profesor Berkman de Estudios Legales Emprendedores en la Facultad de Derecho de Harvard',
     description: 'Benkler estudia la producción entre pares basada en bienes comunes y publicó su libro seminal, "La Riqueza de las Redes", en 2006.',
   },
