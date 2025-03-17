@@ -108,13 +108,20 @@ moreBtn.addEventListener('click', showSpeakers);
 window.addEventListener('resize', visibility);
 
 visibility();
+
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
   event.preventDefault(); // Evita el envío tradicional del formulario
 
   // Capturar los valores del formulario
-  let name = document.getElementById('name').value;
-  let email = document.getElementById('email').value;
-  let message = document.getElementById('message').value;
+  let name = document.getElementById('name').value.trim();
+  let email = document.getElementById('email').value.trim();
+  let message = document.getElementById('message').value.trim();
+
+  if (name === "" || email === "" || message === "") {
+    alert("❌ Por favor, completa todos los campos antes de enviar.");
+    return;
+  }
 
   // Número de WhatsApp al que se enviará el mensaje (código de país + número)
   let phoneNumber = "573216734503"; // Reemplaza con tu número
@@ -127,4 +134,12 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
   // Abrir WhatsApp en una nueva pestaña
   window.open(whatsappURL, '_blank');
+
+  // Mostrar mensaje de éxito después de 2 segundos
+  setTimeout(() => {
+    alert("✅ ¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.");
+  }, 2000);
+
+  // Limpiar el formulario
+  document.getElementById('contactForm').reset();
 });
