@@ -126,8 +126,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   // Número de WhatsApp al que se enviará el mensaje (código de país + número)
   let phoneNumber = "573216734503"; // Reemplaza con tu número
 
-  // Crear el mensaje para WhatsApp
-  let whatsappMessage = `Hola, mi nombre es ${name}. Mi correo es ${email}. ${message}`;
+  // Crear el mensaje con formato
+  let whatsappMessage = `*Nombre:* ${name}%0A*Correo:* ${email}%0A%0A*Mensaje:*%0A${message}`;
 
   // Generar enlace de WhatsApp
   let whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(whatsappMessage)}`;
@@ -143,3 +143,4 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   // Limpiar el formulario
   document.getElementById('contactForm').reset();
 });
+

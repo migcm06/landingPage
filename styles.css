@@ -104,7 +104,8 @@ main {
   font-size: 20px;
   padding-top: 25%;
   padding-left: 5%;
-  color: rgb(2, 34, 7);
+  color: rgb(234 253 237);
+  font-weight: 400;
 }
 
 .s-p {
@@ -533,25 +534,28 @@ label {
 
 input {
   border: solid 0.1px #79d779;
-  width: 60%;
+  width: 80%;
   height: 7vh;
   border-radius: 0.5em;
   padding-left: 2%;
+  font-family: cursive;
 }
 
 textarea {
   border: solid 1px #60cd60;
-    width: 70%;
+    width: 90%;
     height: 15vh;
     text-align: left;
     padding: 1%;
     border-radius: 0.5em;
+    font-family: cursive;
 }
 
 p {
   font-size: 13px;
   font-weight: 300;
   font-family: sans-serif;
+  font-family: cursive;
 }
 
 button {
@@ -560,6 +564,7 @@ button {
   padding: 2%;
   border-radius: 0.7em;
   cursor: pointer;
+  font-family: cursive;
 }
 
 @media screen and (min-width: 768px) {
