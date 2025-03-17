@@ -108,3 +108,23 @@ moreBtn.addEventListener('click', showSpeakers);
 window.addEventListener('resize', visibility);
 
 visibility();
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Evita el envío tradicional del formulario
+
+  // Capturar los valores del formulario
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+  let message = document.getElementById('message').value;
+
+  // Número de WhatsApp al que se enviará el mensaje (código de país + número)
+  let phoneNumber = "573216734503"; // Reemplaza con tu número
+
+  // Crear el mensaje para WhatsApp
+  let whatsappMessage = `Hola, mi nombre es ${name}. Mi correo es ${email}. ${message}`;
+
+  // Generar enlace de WhatsApp
+  let whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+
+  // Abrir WhatsApp en una nueva pestaña
+  window.open(whatsappURL, '_blank');
+});
