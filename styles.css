@@ -17,6 +17,8 @@ header {
   width: 100%;
   background-color: white;
   position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -189,7 +191,7 @@ h2 {
   background-color: rgba(128, 128, 128, 0.596);
   margin: 2% 5%;
   display: flex;
-  padding: 1%;
+  padding: 2%;
   align-items: center;
   height: 26vh;
   flex-direction: column;
@@ -202,10 +204,11 @@ h2 {
   height: auto;
 }
 
-.icon {
+.imagen {
   position: relative;
-  left: -32vw;
+  left: 38%;
 }
+
 
 .join {
   background-color: rgb(44, 179, 62);
@@ -559,7 +562,7 @@ p {
   font-size: 13px;
   font-weight: 300;
   font-family: sans-serif;
-  font-family: cursive;
+  margin-top: 13%;
 }
 
 button {

@@ -127,7 +127,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   let phoneNumber = "573216734503"; // Reemplaza con tu número
 
   // Crear el mensaje con formato
-  let whatsappMessage = `*Nombre:* ${name}%0A*Correo:* ${email}%0A%0A*Mensaje:*%0A${message}`;
+  let whatsappMessage = `*Nombre:* ${name} \n*Correo:* ${email} \n*Mensaje:* ${message}`;
 
   // Generar enlace de WhatsApp
   let whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(whatsappMessage)}`;
